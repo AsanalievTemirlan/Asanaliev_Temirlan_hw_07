@@ -6,6 +6,7 @@ public class Main {
             hero.applySuperAbility();
             if (hero instanceof Medic) {
                 ((Medic) hero).increaseExperience();
+                System.out.println("Опыт лечения Medic: " + ((Medic) hero).getHealPoints());
             }
         }
     }
